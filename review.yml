@@ -1,0 +1,87 @@
+aid: amex-bank-of-canada
+name: Amex Bank of Canada
+review:
+  question: >-
+    Does Amex Bank of Canada (the Canadian Schedule II entity) expose a
+    first-party public developer API, a downloadable OpenAPI/Swagger, or a
+    Consumer-Driven Banking / FDX data-access surface?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Amex Bank of Canada is the Canadian banking subsidiary of the American
+    Express Company (US), a Schedule II (foreign-bank-subsidiary) bank under the
+    Bank Act, incorporated 1990, headquartered in the Toronto area (Markham,
+    Ontario), and supervised by OSFI as a Category II small-and-medium-sized
+    deposit-taking institution. It is a card-centric issuer of American Express
+    charge and credit cards in Canada.
+
+    The Canadian entity publishes NO first-party developer portal and NO
+    downloadable OpenAPI/Swagger. The global American Express developer platform
+    at developer.americanexpress.com (which returned HTTP 200 and lists products
+    such as Card On-Demand, Pay with Points, Pay with Bank Transfer, Account &
+    Transaction, Confirmation of Funds PSD2, Token Service (AETS), and Enhanced
+    Authorization) is operated by the U.S. parent, American Express Company, and
+    is tracked under a separate `american-express` profile. Under distinct-entity
+    discipline it is NOT attributed to Amex Bank of Canada. Those global products
+    are also partner-gated (onboarding required) with no publicly downloadable
+    specifications.
+
+    Canada has no operational open-banking mandate. The federal Consumer-Driven
+    Banking framework (Budget 2024 + 2024 Fall Economic Statement, FCAC as
+    overseer) is legislated but not yet live, so there is no mandated data-sharing
+    API. Consumer access to Amex-Canada account data today is voluntary and
+    largely aggregator/screen-scraping based (Flinks, Plaid, MX, Salt Edge). No
+    documented FDX participation and no published 1033-equivalent posture were
+    found for the Canadian entity.
+  charter: Schedule II bank (foreign-bank subsidiary) under Canada's Bank Act
+  regulator: Office of the Superintendent of Financial Institutions (OSFI)
+  ownership: Wholly owned by American Express Company (United States)
+  firstPartyDeveloperPortal: false
+  downloadableSpecs: false
+  fdxParticipant: false
+  consumerDrivenBankingPosture: >-
+    No published position. Canada's Consumer-Driven Banking framework is
+    legislated but not operational as of the review date; no live data-sharing
+    API exists.
+  aggregatorAccess: >-
+    Consumer data access is aggregator/screen-scraping based (Flinks, Plaid, MX,
+    Salt Edge), not a first-party API.
+  authModel: >-
+    Not applicable — no public first-party API is exposed by the Canadian entity.
+  specProvenance: none
+  transports:
+  - protocol: REST
+    documented: false
+    note: No public first-party REST API is documented for the Canadian Schedule II entity.
+  interacRtrPosture: >-
+    No Amex-Canada-published API around Interac (e-Transfer / consumer
+    data-sharing) or Payments Canada's Real-Time Rail (RTR) was found. As a
+    card-network issuer, Amex Bank of Canada operates on the American Express
+    payment network rather than exposing a public rails API.
+sources:
+- url: https://www.americanexpress.com/en-ca/
+  type: Website
+  status: 200
+  note: Canadian (en-ca) consumer site for American Express in Canada.
+- url: https://www.americanexpress.com/ca/en/company/legal/pillar-iii.html
+  type: RegulatoryDisclosures
+  status: 200
+  note: Basel Pillar III disclosures confirming Schedule II status, OSFI supervision, and Category II SMSB classification.
+- url: https://developer.americanexpress.com/
+  type: DeveloperPortal
+  status: 200
+  note: Global American Express developer portal operated by the U.S. parent (American Express Company); tracked separately as `american-express`. Not attributed to Amex Bank of Canada. Products are partner-gated with no public downloadable specs.
+- url: https://developer.americanexpress.com/products
+  type: APIReference
+  status: 200
+  note: Global product listing (Card On-Demand, Pay with Points, Pay with Bank Transfer, Account & Transaction, Token Service, Enhanced Authorization, etc.) — parent-company scope, not the Canadian entity.
+actions:
+  openapiHarvested: false
+  reason: >-
+    No first-party OpenAPI/Swagger is published by Amex Bank of Canada. The
+    global Amex developer products belong to the U.S. parent and are
+    partner-gated without downloadable specifications, so nothing was harvested
+    into openapi/. Identity-only (built-stub) record is the correct, honest
+    result.
