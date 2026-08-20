@@ -21,6 +21,15 @@ description: >-
   public Canadian API surface is documented.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Schedule II Bank
+- Foreign Bank Subsidiary
+- Credit Cards
+- Payments
+- Consumer-Driven Banking
+tags_raw:
 - Financial Services
 - Banking
 - Canada
