@@ -19,6 +19,17 @@ description: >-
   Amex-Canada accounts today is voluntary and largely aggregator-based rather than
   served by a public first-party API. This is an identity/provider record; no
   public Canadian API surface is documented.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services
