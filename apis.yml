@@ -63,10 +63,12 @@ tags_raw:
 - Consumer-Driven Banking
 - Financial-Services
 created: '2026-07-23'
-modified: '2026-07-23'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+- url: https://www.americanexpress.com/en-us/newsroom/
+  type: Blog
 - type: DomainSecurity
   url: security/amex-bank-of-canada-domain-security.yml
 - type: Website
