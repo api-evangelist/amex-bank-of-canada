@@ -1,4 +1,4 @@
-# Amex Bank of Canada (amex-bank-of-canada)
+# Amex Bank of Canada
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,49 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Amex Bank of Canada is the Canadian banking subsidiary of the American Express Company (United States), incorporated in 1990 and headquartered in the Toronto area (Markham, Ontario). It is a Schedule II bank under Canada's Bank Act — a foreign-bank subsidiary regulated by the Office of the Superintendent of Financial Institutions (OSFI) — that issues American Express charge and credit cards to Canadian consumers and businesses.
+Amex Bank of Canada is the Canadian banking subsidiary of the American Express Company (United States), incorporated in 1990 and headquartered in the Toronto area (Markham, Ontario). It is a Schedule II bank under Canada's Bank Act — a foreign-bank subsidiary regulated by the Office of the Superintendent of Financial Institutions (OSFI) and treated as a Category II small-and-medium-sized deposit-taking institution — and it issues American Express charge and credit cards to Canadian consumers and businesses. As a card-centric Schedule II bank, Amex Bank of Canada runs no first-party developer portal of its own; the global American Express developer platform at developer.americanexpress.com is operated by the U.S. parent (a separate profile), not by this Canadian entity. Canada's federal Consumer-Driven Banking (open-banking) framework, legislated in Budget 2024 and the 2024 Fall Economic Statement with the Financial Consumer Agency of Canada (FCAC) as overseer, is not yet operational, so consumer data access to Amex-Canada accounts today is voluntary and largely aggregator-based rather than served by a public first-party API. This is an identity/provider record; no public Canadian API surface is documented.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/amex-bank-of-canada/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/amex-bank-of-canada/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Schedule II Bank · Foreign Bank Subsidiary · Credit Cards · Payments · Consumer-Driven Banking
 
-## Open-Finance / API Posture
+## Amex Bank of Canada on APIs.io
 
-- **No first-party developer portal for the Canadian entity.** As a card-centric Schedule II bank, Amex Bank of Canada does not run a developer portal of its own. The global American Express developer platform at `developer.americanexpress.com` (Card On-Demand, Pay with Points, Pay with Bank Transfer, Account & Transaction, Token Service, Enhanced Authorization, etc.) is operated by the U.S. parent, American Express Company, and is tracked as a separate `american-express` profile — it is not attributed to this Canadian legal entity.
-- **Consumer-Driven Banking not yet live.** Canada's federal open-banking / Consumer-Driven Banking framework (Budget 2024 + 2024 Fall Economic Statement, with the FCAC as overseer) is legislated but not operational. There is no live mandated data-sharing API.
-- **Aggregator-based access today.** Consumer access to Amex-Canada account data is voluntary and largely aggregator/screen-scraping based (e.g. Flinks, Plaid, MX, Salt Edge) rather than served by a public first-party Canadian API.
-- **No downloadable OpenAPI/Swagger** is published by the Canadian entity.
+Everything profiled for Amex Bank of Canada is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amex-bank-of-canada/](https://apis.io/providers/amex-bank-of-canada/)** — or go straight to one of the APIs or properties below.
 
-This is an identity/provider record. No public Canadian API surface is documented.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Financial Services
-- Banking
-- Canada
-- Schedule II Bank
-- Foreign Bank Subsidiary
-- Credit Cards
-- Payments
-- Consumer-Driven Banking
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+- [Amex Bank Of Canada Domain Security](https://apis.io/security/amex-bank-of-canada/amex-bank-of-canada-domain-security/)
 
-## APIs
+## Where to find this API
 
-No public first-party API is documented for Amex Bank of Canada (the Canadian Schedule II entity) as of the review date.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.americanexpress.com/en-ca/)
-- [About](https://www.americanexpress.com/en-ca/company/about-american-express/)
-- [Regulatory Disclosures (Basel Pillar III)](https://www.americanexpress.com/ca/en/company/legal/pillar-iii.html)
-- [Terms of Service](https://www.americanexpress.com/en-ca/company/legal/online-terms-and-conditions/)
-- [Privacy Policy](https://www.americanexpress.com/en-ca/company/legal/privacy-centre/privacy-statement/)
 - [Support](https://www.americanexpress.com/ca/en/customer-service/contact-us.html)
+- [Blog](https://www.americanexpress.com/en-us/newsroom/)
+- [Terms of service](https://www.americanexpress.com/en-ca/company/legal/online-terms-and-conditions/)
+- [Privacy policy](https://www.americanexpress.com/en-ca/company/legal/privacy-centre/privacy-statement/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amex-bank-of-canada/](https://apis.io/providers/amex-bank-of-canada/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amex Bank of Canada: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amex-bank-of-canada/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
